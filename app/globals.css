@@ -1,20 +1,34 @@
-/* app/globals.css */
-:root {
+/* src/app/globals.css */
+@import "tailwindcss";
+
+@theme {
   /* Primary — indigo, main buttons, links, headings accents */
-  --color-primary: #4F46E5;
-  --color-primary-dark: #3730A3;
-  --color-primary-light: #A5B4FC;
+  --color-primary: #4f46e5;
+  --color-primary-dark: #3730a3;
+  --color-primary-light: #a5b4fc;
 
   /* Secondary — purple, used sparingly for gradients/highlights */
-  --color-secondary: #7C3AED;
+  --color-secondary: #7c3aed;
 
   /* Accent — mint, section backgrounds, subtle highlights */
-  --color-accent: #D9F7E8;
-  --color-accent-dark: #34D399;
+  --color-accent: #d9f7e8;
+  --color-accent-dark: #34d399;
 
-  /* Neutrals — text and backgrounds */
-  --color-text: #1F2937;
-  --color-text-muted: #6B7280;
-  --color-bg: #FFFFFF;
-  --color-bg-soft: #F9FAFB;
+  /* Neutrals */
+  --color-text: #1f2937;
+  --color-text-muted: #6b7280;
+  --color-bg-soft: #f9fafb;
+
+  /* Fonts */
+  --font-heading: var(--font-poppins), sans-serif;
+  --font-body: var(--font-inter), sans-serif;
+
+  /* Radius */
+  --radius-pill: 9999px;
+}
+
+body {
+  background-color: white;
+  color: var(--color-text);
+  font-family: var(--font-body);
 }
